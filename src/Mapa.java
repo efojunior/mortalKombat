@@ -9,11 +9,11 @@ public class Mapa {
 
     public void lutar() {
         while (p1.getVida() > 0 && p2.getVida() > 0) {
-            p1.atacar(p2, "Golpe 1", 10);
+            p1.atacar(p2, "Soco", 10);
             if (p2.getVida() <= 0) {
                 break;
             }
-            p2.atacar(p1, "Golpe 2", 20);
+            p2.atacar(p1, "Chute", 20);
         }
 
         if (p1.getVida() <= 0) {
